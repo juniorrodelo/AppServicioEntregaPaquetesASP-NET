@@ -1,0 +1,5 @@
+H:\Taller\AppServicioEntregraPaquetes-ASP.NET\AppServicioEntregaPaquetes\obj\Debug\AppServicioEntregaPaquetes.csprojResolveAssemblyReference.cache
+H:\Taller\AppServicioEntregraPaquetes-ASP.NET\AppServicioEntregaPaquetes\bin\AppServicioEntregaPaquetes.dll
+H:\Taller\AppServicioEntregraPaquetes-ASP.NET\AppServicioEntregaPaquetes\bin\AppServicioEntregaPaquetes.pdb
+H:\Taller\AppServicioEntregraPaquetes-ASP.NET\AppServicioEntregaPaquetes\obj\Debug\AppServicioEntregaPaquetes.dll
+H:\Taller\AppServicioEntregraPaquetes-ASP.NET\AppServicioEntregaPaquetes\obj\Debug\AppServicioEntregaPaquetes.pdb

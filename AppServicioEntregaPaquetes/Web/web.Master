@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="web.Master.cs" Inherits="AppServicioEntregaPaquetes.Web.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Servicio de Entrega de Paquetes</title>
+    
+    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css" />
+    <link href="../static/css/heroic-features.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+    function mostrar(id) {
+        if (id == "twodaypackage") {
+            $("#twodaypackage").show();
+            $("#overnightpackage").hide();
+            $("#ordanypackage").hide();
+        }
+
+        if (id == "overnightpackage") {
+            $("#twodaypackage").hide();
+            $("#overnightpackage").show();
+            $("#ordanypackage").hide();
+        }
+
+        if (id == "ordanypackage") {
+            $("#twodaypackage").hide();
+            $("#overnightpackage").hide();
+            $("#ordanypackage").show();
+        }
+
+    }
+</script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Default.aspx">AppServicioEntregaPaquetes</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="CreatePackage.aspx">Send Packages</a>
+                    </li>
+                    <li>
+                        <a href="CreatePerson.aspx">Clients</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Actions <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Another action</a></li>
+          </ul>
+        </li>
+      </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+<!-- jQuery -->
+    <script src="../static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>
